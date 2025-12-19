@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Danau Toba</title>
+    <link rel="icon" href="../IMG/Lake Toba North Sumatra Indonesia Vector Art.svg" type="image/svg+xml">
+    <link rel='icon' href='../IMG/Lake%20Toba%20North%20Sumatra%20Indonesia%20Vector%20Art.svg' type='image/svg+xml'>
+    
+    <link rel="stylesheet" href="../CSS/shared.css">
+    <link rel="stylesheet" href="../CSS/style-kontak.css">
+    <link rel="stylesheet" href="../FONT/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <a class="skip-link" href="#page-content">Skip to content</a>
+    <a href="#" title="Kembali ke atas" class="scroll-top-btn" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
+    <button id="darkModeToggle" title="Dark Mode" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+        <header class="site-header">
+            <div class="header-inner glass">
+                <a href="../index.html" class="brand">
+                    <img src="../IMG/icon.png" alt="Logo Danau Toba" class="brand-logo" loading="lazy" decoding="async">
+                    <span>Danau Toba</span>
+                </a>
+                <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+                <nav id="primary-nav" class="primary-nav" role="navigation" aria-label="Primary navigation">
+                    <ul class="nav-list">
+                        <li><a href="../index.html">Beranda</a></li>
+                        <li><a href="tentang.html">Tentang Danau</a></li>
+                        <li><a href="Wisata.html">Wisata</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="kontak.html" class="active">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <section id="page-content" class="contact-hero glass">
+        <h1 class="contact-title">Hubungi Kami</h1>
+        <p class="contact-subtitle">Rencanakan perjalanan Anda ke Danau Toba</p>
+    </section>
+
+    <section class="contact-section glass">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Lokasi</h3>
+                    <p>Kantor Pembuat Web<br>Jl. Sisingamangaraja No.10, Medan<br>Indonesia</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Telepon</h3>
+                    <p>+62 821-1234-5678<br>+62 822-9876-5432</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@wisatatoba.com<br>booking@wisatatoba.com</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Jam Operasional</h3>
+                    <p>Setiap Hari<br>08.00 - 17.00 WIB</p>
+                </div>
+            </div>
+            
+           
+            <form class="contact-form glass" data-endpoint="https://formspree.io/f/mzznavkl" method="POST">
+                <h2>Kirim Pesan</h2>
+                <div class="contact-alert" role="status" aria-live="polite" style="display:none;margin-bottom:12px;padding:12px;border-radius:8px;"></div>
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telp">No. Telepon</label>
+                    <input type="tel" id="telp" name="telp" required>
+                </div>
+                <div class="form-group">
+                    <label for="keperluan">Keperluan</label>
+                    <select id="keperluan" name="keperluan" required>
+                        <option value="">Pilih Keperluan</option>
+                        <option value="wisata">Informasi Wisata</option>
+                        <option value="booking">Reservasi Penginapan</option>
+                        <option value="paket">Paket Wisata</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" rows="5" required></textarea>
+                </div>
+                <!-- Honeypot untuk menangkap bot (jangan diisi) -->
+                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;border:0;padding:0;margin:0;">
+                <label class="newsletter-consent" style="margin-top:.5rem;"><input type="checkbox" name="consent" required> Saya setuju dihubungi untuk informasi dan penawaran terkait wisata.</label>
+                <p class="newsletter-privacy" style="margin-top:.4rem;font-size:0.9rem;opacity:0.9">Kami tidak akan membagikan data Anda. Anda mungkin menerima email konfirmasi setelah mengirim pesan.</p>
+                <button type="submit" class="submit-btn">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+            <section class="map-section glass">
+        <h2>Lokasi Kami</h2>
+            <div class="map-container">
+            	    <div class="map-placeholder" role="button" tabindex="0" aria-label="Muat peta lokasi kami" data-src="https://www.google.com/maps?q=3.5952,98.6722&hl=id&z=15&output=embed" data-autoload="true">
+                <div class="map-thumb" style="background-image:url('../IMG/pemandangan.jpg');height:300px;border-radius:8px 8px 0 0;background-size:cover;background-position:center;"></div>
+                <div class="map-overlay">
+                    <button class="map-load-btn">Muat Peta</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-full">
+        <p>&copy; 2025 Danau Toba Indonesia</p>
+    </footer>
+    <!-- Perilaku form kontak sekarang ditangani oleh JS/contact.js -->
+    <script src="../JS/contact.js"></script>
+    <script src="../JS/darkmode.js"></script>
+    <script src="../JS/navbar.js"></script>
+    <script src="../JS/animations.js"></script>
+    <script src="../JS/ui.js"></script>
+    <script src="../JS/deferred-bg.js"></script>
+    <script src="../JS/scroll-to-top.js"></script>
+</body>
+</html>
+</body>
+</html>
+
+

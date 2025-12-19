@@ -1,0 +1,7 @@
+# robots.txt — allow everything, update the Host and Sitemap URL to your production domain
+User-agent: *
+Allow: /
+
+# Replace the example domain with your real site before publishing
+Host: example.com
+Sitemap: https://example.com/sitemap.xml

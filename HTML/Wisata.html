@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata & Aktivitas - Danau Toba</title>
+    <link rel="icon" href="../IMG/Lake Toba North Sumatra Indonesia Vector Art.svg" type="image/svg+xml">
+    <link rel='icon' href='../IMG/Lake%20Toba%20North%20Sumatra%20Indonesia%20Vector%20Art.svg' type='image/svg+xml'>
+    
+    <link rel="stylesheet" href="../CSS/shared.css">
+    <link rel="stylesheet" href="../CSS/style-wisata.css">
+    <link rel="stylesheet" href="../FONT/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+    /* Inline dark-mode overrides to ensure buttons stay readable on this page */
+    body.dark-mode .btn-green,
+    body.dark-mode .btn-primary,
+    body.dark-mode .btn-secondary {
+        color: #ffffff !important;
+        background: #295b8d !important;
+        border-color: rgba(255,255,255,0.06) !important;
+    }
+    body.dark-mode .btn-green:hover,
+    body.dark-mode .btn-primary:hover,
+    body.dark-mode .btn-secondary:hover {
+        background: #003366 !important;
+        color: #ffffff !important;
+    }
+    </style>
+</head>
+<body>
+    <!-- Background dimuat tunda lewat JS supaya tidak menghalangi render awal -->
+    <script>
+        window.addEventListener('load', function() {
+            document.body.style.backgroundImage = "url('../IMG/Lake Toba, Indonesia (1).jpg')";
+            document.body.style.backgroundAttachment = 'scroll';
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundPosition = 'center';
+        });
+    </script>
+    <a class="skip-link" href="#page-content">Skip to content</a>
+    <a href="#" title="Kembali ke atas" class="scroll-top-btn" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
+    <button id="darkModeToggle" title="Dark Mode" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+        <header class="site-header">
+            <div class="header-inner glass">
+                <a href="../index.html" class="brand">
+                    <img src="../IMG/icon.png" alt="Logo Danau Toba" class="brand-logo" loading="lazy" decoding="async">
+                    <span>Danau Toba</span>
+                </a>
+                <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+                <nav id="primary-nav" class="primary-nav" role="navigation" aria-label="Primary navigation">
+                    <ul class="nav-list">
+                        <li><a href="../index.html">Beranda</a></li>
+                        <li><a href="tentang.html">Tentang Danau</a></li>
+                        <li><a href="Wisata.html" class="active">Wisata</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+   
+    <section id="page-content" class="hero-section glass" style="min-height: 400px;">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Jelajahi Keindahan<br><span class="highlight" style="background: none; color: #ffcc00;">Danau Toba</span></h1>
+                <p class="hero-desc">Temukan pesona alam dan budaya di destinasi wisata super prioritas Indonesia. Dari keindahan danau vulkanik terbesar di dunia hingga warisan budaya Batak yang memukau.</p>
+                <div class="hero-buttons">
+                    <a href="#destinations" class="btn-primary">Lihat Destinasi</a>
+                    <a href="#activities" class="btn-secondary">Aktivitas Wisata</a>
+                </div>
+            </div>
+        </div>
+
+  
+
+
+   
+    <section id="destinations" class="destinations-section">
+        <div class="section-container glass">
+            <h2 class="section-title">Destinasi Unggulan</h2>
+            <div class="search-bar" style="text-align:center;margin-bottom:18px;">
+                <input id="destinationSearch" type="search" placeholder="Cari destinasi (mis. Samosir, airterjun)" aria-label="Cari destinasi" style="max-width:480px;width:100%;padding:10px 14px;border-radius:12px;border:1px solid rgba(0,0,0,0.08);">
+            </div>
+            <div class="destinations-grid">
+                    <div class="destination-card reveal">
+                        <a href="detail-pemandangan.html">
+                            <img src="../IMG/pemandangan.jpg" alt="Pulau Samosir" class="destination-img" loading="lazy" decoding="async">
+                        </a>
+                    <div class="destination-content">
+                        <h3>Pulau Samosir</h3>
+                        <p>Pulau vulkanik terbesar di dunia yang berada di tengah danau, menawarkan pengalaman budaya Batak yang autentik.</p>
+                        <ul class="detail-meta">
+                            <li><strong>Durasi:</strong> 1–2 hari</li>
+                            <li><strong>Buka:</strong> 24 jam (beberapa atraksi buka pagi–sore)</li>
+                            <li><strong>Level:</strong> Santai – cocok untuk keluarga</li>
+                        </ul>
+                        <ul class="destination-features">
+                            <li><i class="fas fa-home"></i> Rumah Adat Batak</li>
+                            <li><i class="fas fa-music"></i> Pertunjukan Tradisional</li>
+                            <li><i class="fas fa-mountain"></i> Pemandangan Indah</li>
+                        </ul>
+                        <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+                            <a href="detail-pemandangan.html" class="btn-secondary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card reveal">
+                    <a href="detail-airterjun.html">
+                        <img src="../IMG/airterjun.jpg" alt="Air Terjun Sipiso-piso" class="destination-img" loading="lazy" decoding="async">
+                    </a>
+                    <div class="destination-content">
+                        <h3>Air Terjun Sipiso-piso</h3>
+                        <p>Air terjun tertinggi di Indonesia dengan ketinggian 120 meter, menawarkan panorama alam yang menakjubkan.</p>
+                        <ul class="detail-meta">
+                            <li><strong>Durasi:</strong> 2–4 jam (termasuk trekking)</li>
+                            <li><strong>Buka:</strong> 07:00–17:00</li>
+                            <li><strong>Level:</strong> Sedikit menantang – trekking pendek</li>
+                        </ul>
+                        <ul class="destination-features">
+                            <li><i class="fas fa-camera"></i> Spot Foto Epic</li>
+                            <li><i class="fas fa-hiking"></i> Trek Hiking</li>
+                            <li><i class="fas fa-cloud"></i> Pemandangan Kabut</li>
+                        </ul>
+                        <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+                            <a href="detail-airterjun.html" class="btn-secondary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card reveal">
+                    <a href="detail-tuktuk.html">
+                        <img src="../IMG/desa tuk tuk.jpg" alt="Desa Tuk Tuk" class="destination-img" loading="lazy" decoding="async">
+                    </a>
+                    <div class="destination-content">
+                        <h3>Desa Tuk Tuk</h3>
+                        <p>Desa wisata dengan pemandangan danau yang memukau, tempat ideal untuk menikmati sunset dan kuliner lokal.</p>
+                        <ul class="detail-meta">
+                            <li><strong>Durasi:</strong> 3–6 jam</li>
+                            <li><strong>Buka:</strong> Semua hari</li>
+                            <li><strong>Level:</strong> Mudah – cocok untuk santai</li>
+                        </ul>
+                        <ul class="destination-features">
+                            <li><i class="fas fa-utensils"></i> Kuliner Khas</li>
+                            <li><i class="fas fa-bed"></i> Penginapan Nyaman</li>
+                            <li><i class="fas fa-sun"></i> Sunset Point</li>
+                        </ul>
+                        <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+                            <a href="detail-tuktuk.html" class="btn-secondary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card reveal">
+                    <a href="detail-museum.html">
+                        <img src="../IMG/Museum.jpg" alt="Huta Bolon Simanindo" class="destination-img" loading="lazy" decoding="async">
+                    </a>
+                    <div class="destination-content">
+                        <h3>Huta Bolon Simanindo</h3>
+                        <p>Desa budaya Batak dengan museum, pertunjukan tari, dan rumah adat yang terawat baik.</p>
+                        <ul class="detail-meta">
+                            <li><strong>Durasi:</strong> 2–3 jam</li>
+                            <li><strong>Buka:</strong> 09:00–16:00</li>
+                            <li><strong>Level:</strong> Mudah – cocok untuk semua usia</li>
+                        </ul>
+                        <ul class="destination-features">
+                            <li><i class="fas fa-university"></i> Museum Batak</li>
+                            <li><i class="fas fa-theater-masks"></i> Tari Tradisional</li>
+                            <li><i class="fas fa-tree"></i> Lingkungan Asri</li>
+                        </ul>
+                        <div style="margin-top:12px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+                            <a href="detail-museum.html" class="btn-secondary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="activities" class="activities-section">
+        <div class="section-container">
+            <h2 class="section-title">Aktivitas Wisata</h2>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <i class="fas fa-swimming-pool"></i>
+                    <h3>Wisata Air</h3>
+                    <ul>
+                        <li>Berenang di Danau Toba</li>
+                        <li>Kayaking</li>
+                        <li>Cruise Danau</li>
+                        <li>Water Sports</li>
+                    </ul>
+                </div>
+                <div class="activity-card">
+                    <i class="fas fa-campground"></i>
+                    <h3>Petualangan</h3>
+                    <ul>
+                        <li>Camping</li>
+                        <li>Hiking</li>
+                        <li>Bersepeda</li>
+                        <li>Off-road</li>
+                    </ul>
+                </div>
+                <div class="activity-card">
+                    <i class="fas fa-theater-masks"></i>
+                    <h3>Budaya</h3>
+                    <ul>
+                        <li>Tari Tradisional</li>
+                        <li>Museum Batak</li>
+                        <li>Workshop Ulos</li>
+                        <li>Festival Budaya</li>
+                    </ul>
+                </div>
+                <div class="activity-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Kuliner</h3>
+                    <ul>
+                        <li>Naniura</li>
+                        <li>Arsik</li>
+                        <li>Dengke Mas na Niura</li>
+                        <li>Sambal Andaliman</li>
+                    </ul>
+                </div>
+                    <div class="activity-card">
+                        <i class="fas fa-bicycle"></i>
+                        <h3>Wisata Sepeda</h3>
+                        <ul>
+                            <li>Jalur sepeda keliling danau</li>
+                            <li>Bike tour ke desa wisata</li>
+                            <li>Rental sepeda tersedia</li>
+                        </ul>
+                    </div>
+                    <div class="activity-card">
+                        <i class="fas fa-camera-retro"></i>
+                        <h3>Fotografi Alam</h3>
+                        <ul>
+                            <li>Spot sunrise & sunset</li>
+                            <li>Foto pemandangan danau</li>
+                            <li>Komunitas fotografer lokal</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+ 
+    <section class="tips-section">
+        <div class="section-container">
+            <h2 class="section-title">Tips Perjalanan</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Waktu Terbaik</h3>
+                    <p>Kunjungi antara Mei-September untuk cuaca terbaik dengan minimal curah hujan.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Transportasi</h3>
+                    <p>Tersedia bus, ferry, dan rental kendaraan untuk menjelajahi area Danau Toba.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-bed"></i>
+                    <h3>Akomodasi</h3>
+                    <p>Pilihan menginap dari homestay hingga resort mewah tersedia di sekitar danau.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Keamanan</h3>
+                    <p>Area wisata aman dan ramah turis dengan pos informasi di titik-titik strategis.</p>
+                </div>
+                    <div class="tip-card">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Tips Eco-Friendly</h3>
+                        <p>Bawa botol minum sendiri, kurangi sampah plastik, dan dukung wisata ramah lingkungan.</p>
+                    </div>
+                    <div class="tip-card">
+                        <i class="fas fa-language"></i>
+                        <h3>Bahasa & Interaksi</h3>
+                        <p>Pelajari beberapa kata Batak untuk pengalaman lebih hangat dan mudah berinteraksi dengan warga lokal.</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section glass" style="margin:2rem 0;">
+        <h2 class="section-title">Peta Destinasi Wisata</h2>
+        <div class="map-container" style="width:100%;height:400px;max-width:900px;margin:auto;">
+            <div class="map-placeholder" role="button" tabindex="0" aria-label="Muat peta Danau Toba" data-src="https://www.google.com/maps?q=Danau+Toba&output=embed">
+                <div class="map-overlay">
+                    <button class="map-load-btn">Muat Peta</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-full">
+        <p>&copy; 2025 Danau Toba Indonesia</p>
+    </footer>
+    <script src="../JS/tourism.js"></script>
+    <script src="../JS/darkmode.js"></script>
+    <script src="../JS/navbar.js"></script>
+    <script src="../JS/search.js"></script>
+    <script src="../JS/animations.js"></script>
+    <script src="../JS/ui.js"></script>
+    <script src="../JS/deferred-bg.js"></script>
+    <script src="../JS/scroll-to-top.js"></script>
+    
+</body>
+</html>
+
+
+
+

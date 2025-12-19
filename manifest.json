@@ -1,0 +1,15 @@
+{
+  "name": "Wisata Danau Toba",
+  "short_name": "DanauToba",
+  "start_url": "/PROJECT/HTML/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#295b8d",
+  "icons": [
+    {
+      "src": "/PROJECT/IMG/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}

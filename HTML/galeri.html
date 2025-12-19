@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Danau Toba</title>
+    <link rel="icon" href="../IMG/Lake Toba North Sumatra Indonesia Vector Art.svg" type="image/svg+xml">
+    <link rel='icon' href='../IMG/Lake%20Toba%20North%20Sumatra%20Indonesia%20Vector%20Art.svg' type='image/svg+xml'>
+    
+    <link rel="stylesheet" href="../CSS/shared.css">
+    <link rel="stylesheet" href="../CSS/style-galeri.css">
+    <link rel="stylesheet" href="../FONT/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <a class="skip-link" href="#page-content">Skip to content</a>
+    <a href="#" title="Kembali ke atas" class="scroll-top-btn" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
+    <button id="darkModeToggle" title="Dark Mode" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+        <header class="site-header">
+            <div class="header-inner glass">
+                <a href="../index.html" class="brand">
+                    <img src="../IMG/icon.png" alt="Logo Danau Toba" class="brand-logo" loading="lazy" decoding="async">
+                    <span>Danau Toba</span>
+                </a>
+                <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+                <nav id="primary-nav" class="primary-nav" role="navigation" aria-label="Primary navigation">
+                    <ul class="nav-list">
+                        <li><a href="../index.html">Beranda</a></li>
+                        <li><a href="tentang.html">Tentang Danau</a></li>
+                        <li><a href="Wisata.html">Wisata</a></li>
+                        <li><a href="galeri.html" class="active">Galeri</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <section id="page-content" class="galeri-section glass" style="min-height: 400px;">
+        <h2 class="galeri-title">Galeri Danau Toba</h2>
+            
+            <div class="galeri-video-cantik">
+                <div class="video-wrapper" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+                    <video class="video-cantik" src="../VIDEOS/DANAU TOBAAA.mp4" autoplay loop muted playsinline width="640" height="360" style="max-width:100%;height:auto;border-radius:16px;box-shadow:0 2px 12px #222;display:block;margin:0 auto;"></video>
+                </div>
+                <div class="video-caption">
+                    <h3 style="text-align:center;">Cuplikan Keindahan Danau Toba</h3>
+                    <p style="text-align:center;">Rasakan suasana dan pesona Danau Toba melalui video singkat berikut.</p>
+                </div>
+            </div>
+            
+            <div class="galeri-grid">
+            <div class="galeri-item">
+                <img src="../IMG/pemandangan.jpg" alt="Pemandangan Danau Toba" class="galeri-img" loading="lazy">
+                <div class="galeri-caption">Pemandangan Danau Toba</div>
+            </div>
+            <div class="galeri-item">
+                <img src="../IMG/samosir.jpg" alt="Pulau Samosir" class="galeri-img" loading="lazy">
+                <div class="galeri-caption">Pulau Samosir</div>
+            </div>
+            <div class="galeri-item">
+                <img src="../IMG/vulkanik.jpg" alt="Budaya Batak" class="galeri-img" loading="lazy">
+                <div class="galeri-caption">Budaya Batak</div>
+            </div>
+            <div class="galeri-item">
+                <img src="../IMG/9 Stunning Places You Absolutely Must Visit At Lake Toba.jpg" alt="Wisata Alam" class="galeri-img" loading="lazy">
+                <div class="galeri-caption">Wisata Alam</div>
+            </div>
+            <div class="galeri-item">
+                <img src="../IMG/keindahan alam.jpg" alt="Keindahan Alam" class="galeri-img" loading="lazy">
+                <div class="galeri-caption">Keindahan Alam</div>
+            </div>
+            <div class="galeri-item">
+                <img src="../IMG/hiijau.jpg" alt="Panorama Hijau" class="galeri-img" loading="lazy">
+                <div class="galeri-caption">Panorama Hijau</div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <button class="modal-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="modal-next"><i class="fas fa-chevron-right"></i></button>
+            <img src="" alt="" class="modal-img">
+            <div class="modal-caption"></div>
+        </div>
+    </div>
+
+    <footer class="glass">
+        <p>&copy; 2025 Danau Toba Indonesia</p>
+    </footer>
+    <script src="../JS/gallery.js"></script>
+    <script src="../JS/darkmode.js"></script>
+    <script src="../JS/navbar.js"></script>
+    <script src="../JS/ui.js"></script>
+    <script src="../JS/deferred-bg.js"></script>
+    <script src="../JS/scroll-to-top.js"></script>
+</body>
+</html>
+
+
