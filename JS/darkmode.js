@@ -1,4 +1,14 @@
 // Dark Mode Toggle Script
+
+// Preload dark mode background image for instant response
+(function() {
+  var darkImg = new Image();
+  darkImg.src = 'IMG/pretty.jpg';
+  var lightImg = new Image();
+  lightImg.src = 'IMG/Lake Toba, Indonesia (1).jpg';
+  console.log('[darkmode] preloading background images');
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
   console.log('[darkmode] DOMContentLoaded triggered');
   
